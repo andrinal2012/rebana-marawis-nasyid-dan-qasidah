@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgmusik"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_song"
+    android:layout_below="@+id/iklan"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:visibility="invisible"
+    android:paddingRight="8dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listView"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+        <ListView
+            android:layout_weight="1"
+            android:id="@+id/songRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/stop"
+        android:visibility="gone"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:text="STOP MUSIC"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
